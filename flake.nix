@@ -24,8 +24,8 @@
           ];
         };
 
-        packages.slag_rs = pkgs.rustPlatform.buildRustPackage {
-          name = "slag_rs";
+        packages.scoria = pkgs.rustPlatform.buildRustPackage {
+          name = "scoria";
           version = "0.1.0";
 
           src = ./.;
@@ -33,9 +33,9 @@
           cargoLock.lockFile = ./Cargo.lock;
         };
 
-        apps.slag_rs = {
+        apps.scoria = {
           type = "app";
-          program = "${self.packages.${pkgs.stdenv.hostPlatform.system}.slag_rs}/bin/slag_rs";
+          program = "${self.packages.${pkgs.stdenv.hostPlatform.system}.scoria}/bin/scoria";
         };
       });
 }

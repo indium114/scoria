@@ -1,5 +1,5 @@
 build:
-    nix build .#slag_rs
+    nix build .#scoria
 
 run:
     go run .

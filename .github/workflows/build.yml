@@ -43,4 +43,4 @@ jobs:
             extra-experimental-features = nix-command flakes
 
       - name: Build from flake
-        run: nix build .#slag_rs
+        run: nix build .#scoria
